@@ -1,11 +1,11 @@
 import javax.swing.JButton;                           	/*   import library GUI   */
-import javax.swing.JFrame;								/*   import library GUI   */
-import javax.swing.JTextField;							/*   import library GUI   */
-import java.awt.EventQueue;								/*   import library GUI   */
+import javax.swing.JFrame;				/*   import library GUI   */
+import javax.swing.JTextField;				/*   import library GUI   */
+import java.awt.EventQueue;				/*   import library GUI   */
 
-public class JVC extends JFrame {						/*   call Class   */
+public class JVC extends JFrame {			/*   call Class   */
 
-	private JButton btn[] = new JButton[16];			/*   Create Button Array   */
+	private JButton btn[] = new JButton[16];							  /*   Create Button Array   */
 	private String[] alist = {"7","8","9","x","4","5","6","/","1","2","3","-",".","0","00","+"};      /*   Create Symbols or Name of Button   */
 	
 	public static void main(String[] args) {
@@ -18,7 +18,7 @@ public class JVC extends JFrame {						/*   call Class   */
 	}
 
 	public JVC() {
-		int count = 0;											/*   Set Variable Count   */
+		int count = 0;								/*   Set Variable Count   */
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);			
 		setBounds(0, 0, 360, 550);
@@ -26,31 +26,31 @@ public class JVC extends JFrame {						/*   call Class   */
 		getContentPane().setLayout(null);
 		
 		final JTextField txt = new JTextField();				/*   Create TextField   */
-		txt.setBounds(30, 30, 290,50);							/*   Set (x,y) TextField   */
-		getContentPane().add(txt);								/*   Show TextField   */
+		txt.setBounds(30, 30, 290,50);						/*   Set (x,y) TextField   */
+		getContentPane().add(txt);						/*   Show TextField   */
 		txt.setColumns(10);
 		
-		JButton btn17 = new JButton("CE");						/*   Create button   */
-		btn17.setBounds(110, 430, 50, 50);						/*   Set (x,y) button   */
-		getContentPane().add(btn17);							/*   Show button   */
+		JButton btn17 = new JButton("CE");					/*   Create button   */
+		btn17.setBounds(110, 430, 50, 50);					/*   Set (x,y) button   */
+		getContentPane().add(btn17);						/*   Show button   */
 		
-		JButton btn18 = new JButton("C");						/*   Create button   */
-		btn18.setBounds(30, 430, 50, 50);						/*   Set (x,y) button   */
-		getContentPane().add(btn18);							/*   Show button   */
-			
-		JButton btn19 = new JButton("=");						/*   Create button   */
-		btn19.setBounds(190, 430, 130, 50);						/*   Set (x,y) button  */
-		getContentPane().add(btn19);							/*   Show button   */
+		JButton btn18 = new JButton("C");					/*   Create button   */
+		btn18.setBounds(30, 430, 50, 50);					/*   Set (x,y) button   */
+		getContentPane().add(btn18);						/*   Show button   */
+		
+		JButton btn19 = new JButton("=");					/*   Create button   */
+		btn19.setBounds(190, 430, 130, 50);					/*   Set (x,y) button  */
+		getContentPane().add(btn19);						/*   Show button   */
 		
 		
 		/*   Use For Loop for Create 16 Button   */
-		for (int y = 110; y < 360; y += 80 ) {						/*   Set X   */
-			for (int x = 30 ; x < 280 ; x += 80 ) {					/*   Set Y   */
-		 
-				btn[count] = new JButton(alist[count]);				/*   Create button array form    */
-				btn[count].setBounds(x, y, 50, 50);					/*   set (x,y) of button array form    */
-				getContentPane().add(btn[count]);					/*   show button on the screen     */
-				count += 1 ;										/*   Create button array form     */
+		for (int y = 110; y < 360; y += 80 ) {					/*   Set X   */
+			for (int x = 30 ; x < 280 ; x += 80 ) {				/*   Set Y   */
+		
+				btn[count] = new JButton(alist[count]);			/*   Create button array form    */
+				btn[count].setBounds(x, y, 50, 50);			/*   set (x,y) of button array form    */
+				getContentPane().add(btn[count]);			/*   show button on the screen     */
+				count += 1 ;						/*   Create button array form     */
 				
 			
 			}
